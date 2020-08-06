@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <div>Weather Dashboard</div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" id="search-function">
+                    
+                    <label>Search For City:</label>
+                    <div class="row"> 
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <textarea class="form-control" type="text" id="input"></textarea>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-bottom:10px;">
+                            <button id="btn" class="button"><i class="fas fa-search" id="icon"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Main Dash-->
+                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12" id="state-container" id="search-state-buttons">
+                    <div class="row">
+                        <div class="col" id="city-data">
+                            <span id="city-header"></span><span id="current-date"></span><span id="weather-emoji"></span>
+                            <div id="temperature">Temperature: </div>
+                            <div id="humidity">Humidity: </div>
+                            <div id="wind-speed">Wind Speed: </div>
+                            <div id="uv-index">UV Index: </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" id="city-next-five-days">
+                            <div class="row">
+                                <div class="col" id="forecast-header">5-Day Forecast:</div>
+                            </div>
+                            <div class="row">
+                                <div class="col cast-div" id="cast1">
+                                    <div class="cast-content" id="cast1-emoji"></div>
+                                    <div class="cast-content" id="cast1-temp"></div>
+                                    <div class="cast-content" id="cast1-hum"></div>
+                                </div>
+                                <div class="col cast-div" id="cast2">
+                                    <div class="cast-content" id="cast2-emoji"></div>
+                                    <div class="cast-content" id="cast2-temp"></div>
+                                    <div class="cast-content" id="cast2-hum"></div>
+                                </div>
+                                <div class="col cast-div" id="cast3">
+                                    <div class="cast-content" id="cast3-emoji"></div>
+                                    <div class="cast-content" id="cast3-temp"></div>
+                                    <div class="cast-content" id="cast3-hum"></div>
+                                </div>
+                                <div class="col cast-div" id="cast4">
+                                    <div class="cast-content" id="cast4-emoji"></div>
+                                    <div class="cast-content" id="cast4-temp"></div>
+                                    <div class="cast-content" id="cast4-hum"></div>
+                                </div>
+                                <div class="col cast-div" id="cast5">
+                                    <div class="cast-content" id="cast5-emoji"></div>
+                                    <div class="cast-content" id="cast5-temp"></div>
+                                    <div class="cast-content" id="cast5-hum"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
