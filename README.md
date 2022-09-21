@@ -1,4 +1,4 @@
-# HW06-WeatherDashboard
+# WeatherDashboard
 
 This project is a basic weather application. You can search any city and the application will give you temperature, wind speed, uv index, and the humidity for the current day. The application will also display the weather and humidity for the following 5-days of the searched city. The last searched city will be saved in local stoarge for the user to see when the application is relaoded (when the application is first opened/used there will not be any city or stats displayed). While in use, the application will save the search history of the previous searched cities and can be clicked to look at those cities again. 
 
